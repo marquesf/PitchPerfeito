@@ -62,20 +62,19 @@ class PlaySoundsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func playRabbit(sender: UIButton) {
-        audioPlayer.stop()
-        audioPlayer.rate = 2.0
-        audioPlayer.play()
-    }
-    
-    @IBAction func playSnail(sender: UIButton) {
+        
+    @IBAction func playSlowAudio(sender: UIButton) {
         audioPlayer.stop()
         audioPlayer.rate = 0.5
         audioPlayer.play()
     }
 
-
+    @IBAction func playFastAudio(sender: UIButton) {
+        audioPlayer.stop()
+        audioPlayer.rate = 2.0
+        audioPlayer.play()
+    }
+    
     @IBAction func stopAudio(sender: UIButton) {
        audioPlayer.stop()
     }
